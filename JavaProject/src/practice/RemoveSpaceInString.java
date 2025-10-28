@@ -3,17 +3,16 @@ package Practice;
 public class RemoveSpaceInString {
 
 	public static void main(String[] args) {
-		String str = "Hello World Java";
-		StringBuilder result = new StringBuilder();
-
-		for (int i = 0; i < str.length(); i++) {
-			char c = str.charAt(i);
-			if (c != ' ') { // condition to skip spaces
-				result.append(c);
+		String name = "p ra s ad";
+		char[] nameArray=name.toCharArray();
+		
+		String removeSpace="";
+		for(char c :nameArray) {
+			if(c !=' ') {
+				removeSpace+=c;
 			}
 		}
-
-		System.out.println(result.toString());
+		System.out.println(removeSpace);
 	}
 
 }
